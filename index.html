@@ -3,13 +3,115 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Заголовок</title>
+    <title>задание по html</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Привет, Артем</h1>
-    <img src="jpg.jpg">
+    <header>
+        <div class="top-menu positioner">
+            <a href="">Информация</a>
+            <a href="">Новости</a>
+            <a href="">Прайс-лист</a>
+            <a href="">Магазин</a>
+            <a href="">Контакты</a>
+            <a class="login" href="">Вход</a>
+        </div>
+    </header>
+    <div class="content-container positioner">
+        <img class="logo" src="" alt="">
+        <!--как добавить логотип не через img?-->
+        <div class="article-1">
+            <h3>Быстро</h3>
+            <p>Мы делаем свою работу быстро! Два часа
+                <br> пролетят незаметно и вы — счастливый
+                <br> обладатель стильной стрижки-минутки!
+            </p>
+        </div>
+        <div class="article-2">
+            <h3>Круто</h3>
+            <p>Забудьте, как вы стриглись раньше.
+                <br> Мы сделаем из вас звезду футбола или кино!
+                <br> Во всяком случае внешне.
+            </p>
+        </div>
+        <div class="article-3">
+            <h3>Дорого</h3>
+            <p>Наши мастера — профессионалы своего дела и
+                <br> не могут стоить дешево К тому же, разве цена
+                <br> не дает определенный статус?
+            </p>
+        </div>
+        <div class="news">
+            <h2>Новости</h2>
+            <p>Нам наконец завезли ягермайстер! Теперь вы можете
+                <br>пропустить стаканчик во время стрижки
+                <br> 11 января
+            </p>
+            <p>В нашей команде пополнение, Борис «Бритва» Стригунец,
+                <br>обладатель множества титулов и наград пополнил
+                <br>наши стройные ряды
+                <br> 18 января
+            </p>
+            <a href="">Все новости</a>
+        </div>
+        <div class="gallery">
+            <h2>Фотогалерея</h2>
+            <img src="" alt="">
+            <button class="prev-pic">Назад</button>
+            <button class="next-pic">Вперед</button>
+        </div>
+        <div class="about-us">
+            <h2>Контактная информация</h2>
+            <p>Барбершоп «Бородинский»
+                <br>Адрес: г. Санкт-Петербург, б.Конюшенная, д.19/8
+                <br>Телефон: +7 (495) 666-02-66
+            </p>
+            <p>Время работы:
+                <br>пн-пт: с 10:00 до 20:00
+                <br>сб-вс: с 10:00 до 19:00
+            </p>
+            <a href="">Как проехать</a>
+            <a href="">Обратная связь</a>
+        </div>
+        <div class="reserve-form">
+            <h2>Записаться</h2>
+            <p>Укажите желаемую дату и время и мы свяжемся
+                <br>с вами для подтверждения брони
+            </p>
+            <form action="" method="">
+                <label>Дата <input type="date" name="reserve-date"></label>
+                <label>Время <input type="time" name="reserve-time"></label>
+                <!--допустимо ли использовать date и time?-->
+                <label>Ваше имя <input type="text" name="reserve-name"></label>
+                <label>Телефон <input type="text" name="reserve-phone"></label>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Барбершоп «Бородинский»
+            <br>Адрес:г.Санкт-Петербург,ул.б.Конюшенная,д.19/8
+            <br><a href="">Как нас найти?</a>
+            <!--а так можно?-->
+            <br>Телефон: +7 (495) 666-02-66
+        </p>
+        <div class="links">
+            <p>Давайте дружить!</p>
+            <a class=" vk-link" href="">
+                <img class="vk-pic" src="" alt="">
+            </a>
+            <a class="facebook-link" href="">
+                <img class="facebook-pic" src="" alt="">
+            </a>
+            <a class="instagram-link" href="">
+                <img class="instagram-pic" src="" alt="">
+            </a>
+        </div>
+        <div class="made-by">
+            <p>Разработано:</p>
+            <a class="html-academy-link" href="">HTML ACADEMY</a>
+        </div>
+    </footer>
 </body>
 
 </html>
