@@ -1,0 +1,28 @@
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    /*background-image: url("images/tint.png");
+    background-position: 0px 40px;*/
+}
+
+
+/* 
+.positioner {
+    width: 60%;
+    margin: auto;
+}
+
+.logo-centerer {
+    text-align: center;
+}
+
+.advantages-item {
+    float: left;
+    width: 30%;
+}
+
+.news {
+    clear: both;
+}
+*/
