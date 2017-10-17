@@ -2,8 +2,15 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+    background-color: black;
+    color: white;
     /*background-image: url("images/tint.png");
     background-position: 0px 40px;*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 
