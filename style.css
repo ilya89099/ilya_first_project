@@ -45,7 +45,6 @@ p {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 header {
@@ -110,6 +109,10 @@ header {
 
 .news {}
 
+.news a {
+    color: black;
+}
+
 .gallery {
     margin-right: 0px;
 }
@@ -130,6 +133,14 @@ header {
     padding: 30px;
 }
 
+.contacts a {
+    color: black;
+}
+
 .reserve-form {
     margin-right: 0px;
+}
+
+footer a {
+    color: white;
 }
