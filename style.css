@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("images/tint.png");
+    background-image: url("images/tint-fixed.png");
     background-position: -50px 70px;
     color: white;
     font-family: "PT Sans Narrow", sans-serif;
@@ -59,8 +59,6 @@ p {
 
 a {
     text-decoration: none;
-    font-size: 14px;
-    line-height: 24px;
 }
 
 header {
@@ -74,7 +72,8 @@ header {
 .top-menu a {
     margin-right: 40px;
     color: white;
-    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .top-menu .login {
@@ -130,14 +129,12 @@ header {
     float: left;
 }
 
-
-/*.news span {
+.news span {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
 }
-*/
 
 .date {
     /*костыль костыль костыль как кнопку вниз спихнуть?*/
@@ -146,16 +143,23 @@ header {
 
 .news .btn {
     width: 140px;
-    margin-top: 36px;
+    margin-top: 33px;
 }
 
 .gallery {
     float: right;
 }
 
+.gallery h2 {
+    margin-bottom: 0;
+}
+
 .gallery img {
+    margin-top: 30px;
     border: 7px solid white;
     width: 300px;
+    margin-bottom: 52px;
+    /*↑настоящий 38px, заменить потом↑*/
 }
 
 .gallery .btn {
@@ -195,21 +199,41 @@ header {
 }
 
 .form-group {
-    font-family: "PT Sans Narrow", sans-serif;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .form-group label,
 .form-group input {
     font-family: inherit;
     font-size: inherit;
-    text-transform: inherit;
     font-weight: inherit;
 }
 
+.form-group label {
+    margin-left: 17px;
+    margin-bottom: 13px;
+}
+
+.form-group input {
+    margin-top: 13px;
+    width: 140px;
+    border: 2px solid black;
+    padding: 10px;
+    display: block;
+}
+
+.form-group:nth-child(3),
+.form-group:nth-child(4) {
+    margin-bottom: 0;
+}
+
 .reserve-form .btn {
+    margin-top: 20px;
+    /*↑это все потому,что margin не схлопываются, а складываются, почему?↑*/
     width: 300px;
 }
 
@@ -218,11 +242,11 @@ footer {
     margin-top: 40px;
 }
 
-footer a {
+.bot-menu a {
     color: white;
+    font-size: 14px;
+    line-height: 24px;
 }
-
-.bot-menu {}
 
 .find-us {
     text-align: left;
@@ -240,12 +264,11 @@ footer a {
 }
 
 .link-block .btn {
-    font-size: 0;
     padding: 0;
     display: inline-block;
-    /*странно работает*/
+    /*↓странно работает↓*/
     vertical-align: middle;
-    /*странно работает*/
+    /*↑странно работает↑*/
     text-align: center;
     margin-right: 7px;
     width: 45px;
@@ -254,15 +277,16 @@ footer a {
 }
 
 .link-block .vk-link {
-    padding-top: 15px;
+    padding-top: 12px;
+    margin-left: 5px;
 }
 
 .link-block .fb-link {
-    padding-top: 10px;
+    padding-top: 11px;
 }
 
 .link-block .inst-link {
-    padding-top: 11px;
+    padding-top: 12px;
 }
 
 .made-by {
