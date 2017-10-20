@@ -1,17 +1,31 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url("images/tint.png");
+    background-position: -50px 70px;
+    color: white;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
-    background-image: url("images/tint.png");
-    background-position: -50px 40px;
-    color: white;
     font-weight: 700;
 }
 
 * {
     box-sizing: border-box;
+    font-size: 0;
+}
+
+.btn {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    border-width: 0px;
 }
 
 .top-menu,
@@ -45,6 +59,8 @@ p {
 
 a {
     text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 header {
@@ -78,6 +94,7 @@ header {
 
 .features-item {
     width: 300px;
+    padding: 0 20px;
     float: left;
     text-align: center;
     margin-right: 20px;
@@ -103,18 +120,47 @@ header {
 .news,
 .gallery {
     width: 470px;
-    float: left;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    /*у всех h2 откуда то взялся margin-top:25px*/
 }
 
-.news {}
+.news {
+    float: left;
+}
 
-.news a {
-    color: black;
+
+/*.news span {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+*/
+
+.date {
+    /*костыль костыль костыль как кнопку вниз спихнуть?*/
+    margin-right: 300px;
+}
+
+.news .btn {
+    width: 140px;
+    margin-top: 36px;
 }
 
 .gallery {
-    margin-right: 0px;
+    float: right;
+}
+
+.gallery img {
+    border: 7px solid white;
+    width: 300px;
+}
+
+.gallery .btn {
+    width: 140px;
+    margin-right: 20px;
 }
 
 .contacts-and-form {
@@ -128,19 +174,103 @@ header {
 
 .contacts,
 .reserve-form {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
     width: 470px;
-    float: left;
-    padding: 30px;
 }
 
-.contacts a {
-    color: black;
+.contacts {
+    float: left;
+}
+
+.contacts .btn {
+    margin-right: 20px;
+    width: 140px;
 }
 
 .reserve-form {
+    float: right;
     margin-right: 0px;
+}
+
+.form-group {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form-group label,
+.form-group input {
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: inherit;
+    font-weight: inherit;
+}
+
+.reserve-form .btn {
+    width: 300px;
+}
+
+footer {
+    background-image: url("images/bg-footer.png");
+    margin-top: 40px;
 }
 
 footer a {
     color: white;
+}
+
+.bot-menu {}
+
+.find-us {
+    text-align: left;
+    margin-left: 10px;
+    float: left;
+    width: 300px;
+}
+
+.link-block {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: left;
+    width: 300px;
+}
+
+.link-block .btn {
+    font-size: 0;
+    padding: 0;
+    display: inline-block;
+    /*странно работает*/
+    vertical-align: middle;
+    /*странно работает*/
+    text-align: center;
+    margin-right: 7px;
+    width: 45px;
+    height: 45px;
+    background-color: black;
+}
+
+.link-block .vk-link {
+    padding-top: 15px;
+}
+
+.link-block .fb-link {
+    padding-top: 10px;
+}
+
+.link-block .inst-link {
+    padding-top: 11px;
+}
+
+.made-by {
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.made-by .btn {
+    width: 140px;
 }
