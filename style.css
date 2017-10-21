@@ -72,12 +72,16 @@ header {
 .top-menu a {
     margin-right: 40px;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
 }
 
 .top-menu .login {
     float: right;
+    text-align: right;
+    width: 60px;
+    display: block;
+    background: url("images/login.png") no-repeat 2px 5px;
     margin-right: 6px;
 }
 
@@ -119,7 +123,7 @@ header {
 .news,
 .gallery {
     width: 470px;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 80px;
     /*у всех h2 откуда то взялся margin-top:25px*/
@@ -129,16 +133,28 @@ header {
     float: left;
 }
 
+.news h2 {
+    margin-bottom: 17px;
+}
+
+.news p {
+    margin-bottom: 5px;
+}
+
+.news p:nth-child(4) {
+    margin-top: 30px;
+}
+
 .news span {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 14px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 700;
 }
 
 .date {
-    /*костыль костыль костыль как кнопку вниз спихнуть?*/
     margin-right: 300px;
+    /*костыль костыль костыль как кнопку вниз спихнуть?*/
 }
 
 .news .btn {
@@ -155,7 +171,7 @@ header {
 }
 
 .gallery img {
-    margin-top: 30px;
+    margin-top: 20px;
     border: 7px solid white;
     width: 300px;
     margin-bottom: 48px;
@@ -178,7 +194,7 @@ header {
 
 .contacts,
 .reserve-form {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 80px;
     width: 470px;
@@ -233,7 +249,7 @@ header {
 
 .reserve-form .btn {
     margin-top: 20px;
-    /*↑это все потому,что margin не схлопываются, а складываются, почему?↑*/
+    /*↑это все потому,что margin не схлопываются, из за рамок наверно?↑*/
     width: 300px;
 }
 
@@ -253,6 +269,10 @@ footer {
     margin-left: 10px;
     float: left;
     width: 300px;
+}
+
+.find-us a {
+    text-decoration: underline;
 }
 
 .link-block {
