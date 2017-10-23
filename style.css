@@ -59,6 +59,17 @@ p {
 
 a {
     text-decoration: none;
+    font-size: 14px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    font-size: 14px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
 }
 
 header {
@@ -145,7 +156,6 @@ header {
 }
 
 .news span {
-    font-family: "PT Sans Narrow", sans-serif;
     font-size: 14px;
     text-transform: lowercase;
     font-weight: 700;
@@ -215,18 +225,9 @@ header {
 }
 
 .form-group {
-    font-size: 14px;
-    font-weight: 700;
     margin-bottom: 15px;
     display: inline-block;
     margin-right: 20px;
-}
-
-.form-group label,
-.form-group input {
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
 }
 
 .form-group label {
@@ -319,6 +320,9 @@ footer {
     width: 140px;
 }
 
+
+/*↓ модальное в будущем окно, сейчас просто форма ↓*/
+
 .login-page {
     background: none;
     background-color: black;
@@ -340,12 +344,6 @@ footer {
     margin-bottom: 15px
 }
 
-.login-form input {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-}
-
 .login-form .login-name,
 .login-form .login-password {
     width: 300px;
@@ -360,22 +358,13 @@ footer {
     margin-right: 6px;
     position: relative;
     top: 1px;
-}
-
-.login-form label {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
+    /*↑  +-  ↑*/
 }
 
 .login-form a {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
     float: right;
     color: black;
     text-decoration: underline;
-    margin-t
 }
 
 .login-form .btn {
