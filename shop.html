@@ -13,22 +13,25 @@
 
 <body class="shop-page">
     <header>
-        <nav class="top-menu">
+        <div class="top-menu  clearfix">
             <a class="shop-logo" href="index.html"><img src="images/shop-logo.png" alt=""></a>
-            <a href="">Информация</a>
-            <a href="">Новости</a>
-            <a href="">Прайс-лист</a>
-            <a href="">Магазин</a>
-            <a href="">Контакты</a>
-            <a class="login" href="login-menu.html">Вход</a>
-        </nav>
+            <nav class="top-links">
+                <a href="#">Информация</a>
+                <a href="#">Новости</a>
+                <a href="#">Прайс-лист</a>
+                <a href="shop.html">Магазин</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="login-block">
+                <a class="login" href="login-menu.html">Вход</a>
+            </div>
     </header>
     <main class="shop-container clearfix">
         <h2>Средства для ухода</h2>
         <nav class="shop-breadcrumbs">
-            <a href="">Главная</a>
-            <a href="">Магазин</a>
-            <a href="">Средства для ухода</a>
+            <a href="#">Главная</a>
+            <a href="#">Магазин</a>
+            <a href="#">Средства для ухода</a>
         </nav>
         <div class="shop-filters">
             <form action="">
@@ -62,8 +65,8 @@
             </form>
         </div>
         <div class="shop-catalog">
-            <div class="catalog-block">
-                <div class="catalog-item  catalog-item-1">
+            <ul class="catalog-block">
+                <li class="catalog-item">
                     <img class="item-image" src="images/catalog/item1.jpg" alt="">
                     <div class="item-info">
                         <p class="item-name">Набор для путешествий</p>
@@ -71,8 +74,8 @@
                         <div class="item-price">2 900 ₽</div>
                         <button class="buy-item  btn">Купить</button>
                     </div>
-                </div>
-                <div class="catalog-item  catalog-item-2">
+                </li>
+                <li class="catalog-item">
                     <img class="item-image" src="images/catalog/item2.jpg" alt="">
                     <div class="item-info">
                         <p class="item-name">Увлажняющий кондиционер</p>
@@ -80,8 +83,8 @@
                         <div class="item-price">750 ₽</div>
                         <button class="buy-item  btn">Купить</button>
                     </div>
-                </div>
-                <div class="catalog-item  catalog-item-3">
+                </li>
+                <li class="catalog-item">
                     <img class="item-image" src="images/catalog/item3.jpg" alt="">
                     <div class="item-info">
                         <p class="item-name">Гель для волос</p>
@@ -89,8 +92,8 @@
                         <div class="item-price">290 ₽</div>
                         <button class="buy-item  btn">Купить</button>
                     </div>
-                </div>
-                <div class="catalog-item  catalog-item-4">
+                </li>
+                <li class="catalog-item">
                     <img class="item-image" src="images/catalog/item4.jpg" alt="">
                     <div class="item-info">
                         <p class="item-name">Гель для укладки волос</p>
@@ -98,8 +101,8 @@
                         <div class="item-price">500 ₽</div>
                         <button class="buy-item  btn">Купить</button>
                     </div>
-                </div>
-                <div class="catalog-item  catalog-item-5">
+                </li>
+                <li class="catalog-item">
                     <img class="item-image" src="images/catalog/item5.jpg" alt="">
                     <div class="item-info">
                         <p class="item-name">Гель для волос</p>
@@ -107,8 +110,8 @@
                         <div class="item-price">300 ₽</div>
                         <button class="buy-item  btn">Купить</button>
                     </div>
-                </div>
-                <div class="catalog-item  catalog-item-6">
+                </li>
+                <li class="catalog-item">
                     <img class="item-image" src="images/catalog/item6.jpg" alt="">
                     <div class="item-info">
                         <p class="item-name">Набор для бритья</p>
@@ -116,13 +119,13 @@
                         <div class="item-price">3 900 ₽</div>
                         <button class="buy-item  btn">Купить</button>
                     </div>
-                </div>
-            </div>
-            <div class="catalog-buttons">
-                <a class="btn" href="">1</a>
-                <a class="btn" href="">2</a>
-                <a class="btn" href="">3</a>
-                <a class="btn" href="">4</a>
+                </li>
+            </ul>
+            <div class="pagination">
+                <a class="btn" href="#">1</a>
+                <a class="btn" href="#">2</a>
+                <a class="btn" href="#">3</a>
+                <a class="btn" href="#">4</a>
             </div>
         </div>
     </main>
@@ -130,26 +133,20 @@
         <div class="bot-menu  clearfix">
             <div class="find-us">
                 <p>Барбершоп «Бородинский»
-                    <br>Адрес:г.Санкт-Петербург,ул.б.Конюшенная,д.19/8
-                    <br><a href="">Как нас найти?</a>
+                    <br>Адрес: г. Санкт-Петербург, ул. б. Конюшенная, д. 19/8
+                    <br><a href="#">Как нас найти?</a>
                     <br>Телефон: +7 (495) 666-02-66
                 </p>
             </div>
             <div class="link-block">
                 <p>Давайте дружить!</p>
-                <a class=" vk-link  link  btn" href="">
-                    <img class="vk-pic" src="images/vk.png" alt="">
-                </a>
-                <a class="fb-link  link  btn" href="">
-                    <img class="fb-pic" src="images/facebook.png" alt="">
-                </a>
-                <a class="inst-link  link  btn" href="">
-                    <img class="inst-pic" src="images/instagram.png" alt="">
-                </a>
+                <a class="vk-link  btn" href="#"></a>
+                <a class="fb-link  btn" href="#"></a>
+                <a class="inst-link  btn" href="#"></a>
             </div>
             <div class="made-by">
                 <p>Разработано:</p>
-                <a class="html-academy-link  btn" href="">html academy</a>
+                <a class="html-academy-link  btn" href="#">html academy</a>
             </div>
         </div>
     </footer>
