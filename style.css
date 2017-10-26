@@ -1038,12 +1038,12 @@ footer {
     margin-bottom: 30px;
 }
 
-.shop-filters input {
-    margin-bottom: 25px;
+.shop-filters .shop-input-group {
+    margin-bottom: 20px;
 }
 
 .product-groups {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .shop-filters .btn {
