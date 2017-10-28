@@ -1,0 +1,64 @@
+.vk, .instagram, .facebook, .stick, .rhombus, .login, .lock, .cross, .white-rhombus, .user{
+	background: url(sprites.png) no-repeat;
+}
+
+.vk{
+	background-position: -59px -367px ;
+	width: 27px;
+	height: 15px;
+}
+
+.instagram{
+	background-position: -65px -463px ;
+	width: 20px;
+	height: 20px;
+}
+
+.facebook{
+	background-position: -66px -566px ;
+	width: 11px;
+	height: 22px;
+}
+
+.stick{
+	background-position: -1345px -207px ;
+	width: 8px;
+	height: 278px;
+}
+
+.rhombus{
+	background-position: -68px -170px ;
+	width: 11px;
+	height: 12px;
+}
+
+.login{
+	background-position: -67px -666px ;
+	width: 14px;
+	height: 14px;
+}
+
+.lock{
+	background-position: -67px -65px ;
+	width: 13px;
+	height: 15px;
+}
+
+.cross{
+	background-position: -64px -265px ;
+	width: 19px;
+	height: 19px;
+}
+
+.white-rhombus{
+	background-position: -559px -758px ;
+	width: 30px;
+	height: 29px;
+}
+
+.user{
+	background-position: -168px -770px ;
+	width: 13px;
+	height: 13px;
+}
+
