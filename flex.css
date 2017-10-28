@@ -648,6 +648,12 @@ footer {
     margin-bottom: 15px
 }
 
+.login-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
 .login-name,
 .login-password {
     width: 300px;
@@ -673,14 +679,16 @@ footer {
     /*↑  +-  ↑*/
 }
 
+.login-form label {
+    margin-right: auto;
+}
+
 .login-form a {
-    float: right;
     color: black;
     text-decoration: underline;
 }
 
 .login-form .btn {
-    clear: both;
     width: 300px;
     margin-top: 15px;
 }
