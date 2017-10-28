@@ -648,13 +648,21 @@ footer {
     margin-bottom: 15px
 }
 
-.login-form .login-name,
-.login-form .login-password {
+.login-name,
+.login-password {
     width: 300px;
     padding: 10px;
     padding-left: 15px;
     border: 2px solid black;
     margin-bottom: 10px;
+}
+
+.login-name {
+    background: url("images/sprite.png") no-repeat 99px -758px;
+}
+
+.login-password {
+    background: url("images/sprite.png") no-repeat 200px -55px;
 }
 
 .login-form .remember {
