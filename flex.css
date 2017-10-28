@@ -1,0 +1,847 @@
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+    /* 1 */
+    display: block;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: inherit;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+audio,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+img {
+    border-style: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+ ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details,
+menu {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+canvas {
+    display: inline-block;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+
+/*↑  Normalize css  ↑*/
+
+
+/*↑  Normalize css  ↑*/
+
+
+/*↑  Normalize css  ↑*/
+
+
+/*↑  Normalize css  ↑*/
+
+.diamond {
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    /* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    /* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    margin-left: 130px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.container-960 {
+    width: 960px;
+    margin: auto;
+}
+
+
+/*↓  общие размеры для шрифтов  ↓*/
+
+h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    font-size: 14px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+}
+
+.btn {
+    text-decoration: none;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 13px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.barbershop-page {
+    background: url("images/tint.png") -329px 44px, url("images/subtint.png");
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-links {
+    font-size: 0;
+}
+
+.top-menu>div,
+.top-menu>nav {
+    padding: 0px 26px 0px 30px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 26px 0px 26px 0px;
+    display: inline-block;
+    margin-right: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.login-block {
+    font-size: 0;
+}
+
+.top-menu .login {
+    margin-right: 6px;
+    text-align: right;
+    width: 60px;
+    display: inline-block;
+    background: url("images/sprite.png") no-repeat -70px -635px;
+}
+
+.logo-centerer {
+    margin-top: 60px;
+    text-align: center;
+    padding-left: 1.354166%;
+}
+
+.features {
+    margin: 60px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-item {
+    width: 280px;
+    text-align: center;
+    background: url("images/sprite.png") -434px -679px;
+}
+
+.features-item:nth-child(2) p {
+    padding: 0px 10px;
+    /*↑  не знаю шо с распределением текста, пускай будет так  ↑*/
+}
+
+.features-item p {
+    margin-top: 60px;
+}
+
+.news,
+.gallery,
+.contacts,
+.reserve-form {
+    font-size: 0;
+}
+
+.main-item {
+    margin-top: 36px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    background: url("images/sprite.png") no-repeat -880px -135px, url("images/bg.png");
+    display: flex;
+    justify-content: space-between;
+}
+
+.news,
+.gallery {
+    width: 470px;
+    /*у всех h2 откуда то взялся margin-top:25px*/
+}
+
+.news {
+    padding: 20px 40px 50px 80px;
+    /*background-color: blue;*/
+}
+
+.news h2 {
+    margin-bottom: -10px;
+    /*отрицательный отступ лучше, чем костыль*/
+}
+
+.news-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
+.news p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.news span {
+    font-size: 14px;
+    text-transform: lowercase;
+    font-weight: 700;
+}
+
+.date {
+    margin-right: 250px;
+    /*костыль костыль костыль как кнопку вниз спихнуть?*/
+}
+
+.news .btn {
+    width: 140px;
+    margin-top: 33px;
+}
+
+.gallery {
+    /*background-color: yellow;*/
+    padding: 20px 20px 50px 95px;
+}
+
+.gallery h2 {
+    margin-bottom: 0;
+}
+
+.gallery img {
+    margin-top: 20px;
+    border: 7px solid rgb(255, 255, 255);
+    width: 300px;
+    margin-bottom: 48px;
+    /*↑настоящий 38px, заменить потом↑*/
+}
+
+.gallery .btn {
+    width: 140px;
+    margin-right: 20px;
+}
+
+.contacts-and-form {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    background: url("images/sprite.png") no-repeat -880px -135px, url("images/bg.png");
+}
+
+.contacts {
+    /*background-color: blue;*/
+    width: 470px;
+    padding: 20px 50px 50px 80px;
+}
+
+.contacts .btn {
+    margin-right: 20px;
+    width: 140px;
+}
+
+.reserve-form {
+    width: 470px;
+    padding: 20px 70px 50px 80px;
+    /*background-color: yellow;*/
+}
+
+.reserve-form form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.form-group label {
+    margin-left: 17px;
+    margin-bottom: 13px;
+}
+
+.form-group input {
+    margin-top: 13px;
+    width: 140px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+}
+
+.reserve-form .btn {
+    margin-top: 5px;
+    /*↑ +15px form-group margin-bottom, итого 20px ↑*/
+    width: 300px;
+}
+
+footer {
+    background-image: url("images/bg-footer.png");
+    margin-top: 40px;
+}
+
+.bot-menu {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: orange;*/
+    margin: 0px 10px;
+}
+
+.bot-menu a {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.find-us {
+    text-align: left;
+    width: 350px;
+    /*background-color: red;*/
+}
+
+.find-us a {
+    text-decoration: underline;
+}
+
+.link-block {
+    font-size: 0;
+    text-align: center;
+    /*background-color: blue;*/
+    margin-right: auto;
+    width: 250px;
+}
+
+.link-block .btn {
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    margin-right: 6px;
+    width: 43px;
+    height: 43px;
+}
+
+.link-block .vk-link {
+    background: url("images/sprite.png") no-repeat -50px -353px, rgb(0, 0, 0);
+}
+
+.link-block .fb-link {
+    background: url("images/sprite.png") no-repeat -50px -556px, rgb(0, 0, 0);
+}
+
+.link-block .inst-link {
+    background: url("images/sprite.png") no-repeat -52px -452px, rgb(0, 0, 0);
+}
+
+.made-by {
+    width: 350px;
+    font-size: 0;
+    /*background-color: red;*/
+    text-align: right;
+}
+
+.made-by p {
+    margin-right: 30px;
+}
+
+.made-by .btn {
+    width: 140px;
+}
+
+
+/*↑  Barbershop Barbershop  ↑*/
+
+
+/*↑  Barbershop Barbershop  ↑*/
+
+
+/*↑  Barbershop Barbershop  ↑*/
+
+
+/*↑  Barbershop Barbershop  ↑*/
+
+.login-page {
+    background-color: black;
+}
+
+.login-window {
+    color: black;
+    width: 460px;
+    margin: auto;
+    margin-top: 40px;
+    background: url("images/bg.png");
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.login-window h2 {
+    margin-bottom: 15px
+}
+
+.login-form .login-name,
+.login-form .login-password {
+    width: 300px;
+    padding: 10px;
+    padding-left: 15px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.login-form .remember {
+    margin: 0;
+    margin-right: 6px;
+    position: relative;
+    top: 1px;
+    /*↑  +-  ↑*/
+}
+
+.login-form a {
+    float: right;
+    color: black;
+    text-decoration: underline;
+}
+
+.login-form .btn {
+    clear: both;
+    width: 300px;
+    margin-top: 15px;
+}
+
+
+/*↑  Будущая модалка  ↑*/
+
+
+/*↑  Будущая модалка  ↑*/
+
+
+/*↑  Будущая модалка  ↑*/
+
+
+/*↑  Будущая модалка  ↑*/
+
+.shop-page {
+    background-image: url("images/bg.png");
+}
+
+.shop-page .top-links a:nth-child(4) {
+    padding-bottom: 22px;
+    /*↑  на 4 меньше обычного потому что ↓рамка↓  ↑*/
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.shop-logo {
+    height: 76px;
+}
+
+.shop-main {
+    color: rgb(0, 0, 0);
+}
+
+.shop-main h2 {
+    margin-left: 10px;
+}
+
+.shop-breadcrumbs {
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.shop-breadcrumbs .diamond {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    margin-right: 7px;
+    position: relative;
+    top: 2px;
+}
+
+.shop-breadcrumbs a {
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.shop-breadcrumbs a:last-child {
+    color: rgb(171, 169, 167);
+}
+
+.filters-and-catalog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-filters {
+    padding-left: 10px;
+    width: 230px;
+}
+
+.shop-filters h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.shop-filters .shop-input-group {
+    margin-bottom: 20px;
+}
+
+.product-groups {
+    margin-top: 30px;
+}
+
+.shop-catalog {
+    width: 710px;
+}
+
+.shop-filters .btn {
+    margin-top: 20px;
+    width: 112px;
+}
+
+.catalog-block {
+    margin-right: 10px;
+    font-size: 0;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.catalog-item {
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px rgba(148, 148, 148, 0.3);
+}
+
+.catalog-item p {
+    line-height: 18px;
+}
+
+.item-info {
+    padding: 16px;
+}
+
+.item-name {
+    text-transform: none;
+    margin-top: 5px;
+}
+
+.item-price {
+    font-size: 14px;
+    display: inline-block;
+    width: 110px;
+    background-color: rgb(229, 229, 229);
+    padding: 13px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.catalog-item p {
+    margin: 0;
+}
+
+.catalog-item .btn {
+    width: 78px;
+}
+
+.pagination {
+    margin-top: 25px;
+}
+
+.pagination .btn {
+    width: 45px;
+    margin-right: 7px;
+}
+
+.pagination .btn:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+/*↑  Магазин Магазин  ↑*/
+
+
+/*↑  Магазин Магазин  ↑*/
+
+
+/*↑  Магазин Магазин  ↑*/
+
+
+/*↑  Магазин Магазин  ↑*/
