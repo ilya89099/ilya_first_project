@@ -324,14 +324,8 @@ input {
     border-radius: 0px;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .barbershop-page {
-    background: url("images/tint.png") -329px 44px, url("images/subtint.png");
+    background: url("images/tint.png") -328px 44px, url("images/subtint.png");
 }
 
 header {
@@ -382,24 +376,25 @@ header {
 }
 
 .features {
-    margin: 60px 10px 0px 10px;
+    margin: 35px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
 }
 
 .features-item {
-    width: 280px;
+    width: 300px;
     text-align: center;
-    background: url("images/sprite.png") -434px -679px;
-}
-
-.features-item:nth-child(2) p {
-    padding: 0px 10px;
-    /*↑  не знаю шо с распределением текста, пускай будет так  ↑*/
+    background: url("images/sprite.png") -424px -679px;
 }
 
 .features-item p {
     margin-top: 60px;
+    padding: 0px 10px;
+}
+
+.features-item:nth-child(2) p {
+    padding: 0px 20px;
+    /*↑  не знаю шо с распределением текста, пускай будет так  ↑*/
 }
 
 .news,
@@ -410,24 +405,27 @@ header {
 }
 
 .main-item {
-    margin-top: 36px;
+    margin-top: 64px;
     margin-right: 10px;
     margin-left: 10px;
     color: rgb(0, 0, 0);
-    background: url("images/sprite.png") no-repeat -880px -135px, url("images/bg.png");
+    /*background: url("images/sprite.png") no-repeat -880px -135px, url("images/bg.png");*/
+    background-color: green;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .news,
 .gallery {
-    width: 470px;
     /*у всех h2 откуда то взялся margin-top:25px*/
 }
 
 .news {
-    padding: 20px 40px 50px 80px;
-    /*background-color: blue;*/
+    /*padding: 20px 40px 50px 80px;*/
+    background-color: blue;
+    width: 350px;
+    margin-right: 40px;
 }
 
 .news h2 {
@@ -457,7 +455,7 @@ header {
 }
 
 .date {
-    margin-right: 250px;
+    margin-right: 300px;
     /*костыль костыль костыль как кнопку вниз спихнуть?*/
 }
 
@@ -467,8 +465,10 @@ header {
 }
 
 .gallery {
-    /*background-color: yellow;*/
-    padding: 20px 20px 50px 95px;
+    background-color: yellow;
+    width: 300px;
+    font-size: 0;
+    /*padding: 20px 20px 50px 95px;*/
 }
 
 .gallery h2 {
@@ -480,13 +480,22 @@ header {
     border: 7px solid rgb(255, 255, 255);
     width: 300px;
     margin-bottom: 48px;
-    /*↑настоящий 38px, заменить потом↑*/
 }
 
 .gallery .btn {
     width: 140px;
     margin-right: 20px;
 }
+
+
+/*↓↓  кнопки все еще блочно-строчные, не хочу переделывать  ↓↓*/
+
+.gallery .btn:last-child {
+    margin-right: 0;
+}
+
+
+/*↑↑  кнопки все еще блочно-строчные, не хочу переделывать  ↑↑*/
 
 .contacts-and-form {
     margin-top: 30px;
@@ -533,7 +542,7 @@ header {
     margin-top: 13px;
     width: 140px;
     border: 2px solid rgb(0, 0, 0);
-    padding: 10px;
+    padding: 10px 10px 10px 14px;
     display: block;
 }
 
@@ -659,9 +668,34 @@ footer {
     width: 300px;
     padding: 10px;
     padding-left: 15px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 700;
 }
+
+
+/*↓↓ стилизация placeholder ↓↓*/
+
+input[class="login-name"]::-moz-placeholder {
+    color: rgb(0, 0, 0);
+}
+
+input[class="login-password"]::-moz-placeholder {
+    color: rgb(0, 0, 0);
+}
+
+input[class="login-name"]::-webkit-input-placeholder {
+    color: rgb(0, 0, 0);
+}
+
+input[class="login-password"]::-webkit-input-placeholder {
+    color: rgb(0, 0, 0);
+}
+
+
+/*↑↑ стилизация placeholder ↑↑*/
 
 .login-name {
     background: url("images/sprite.png") no-repeat 99px -758px;
