@@ -319,7 +319,7 @@ input {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 13px;
+    padding: 14px 13px 14px 15px;
     border-width: 0px;
     border-radius: 0px;
 }
@@ -379,6 +379,7 @@ header {
     margin: 35px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 64px;
 }
 
 .features-item {
@@ -405,12 +406,12 @@ header {
 }
 
 .main-item {
-    margin-top: 64px;
+    margin-top: 35px;
     margin-right: 10px;
     margin-left: 10px;
     color: rgb(0, 0, 0);
-    /*background: url("images/sprite.png") no-repeat -880px -135px, url("images/bg.png");*/
-    background-color: green;
+    background: url("images/sprite.png") no-repeat -880px -135px, url("images/bg.png");
+    /*background-color: green;*/
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -418,19 +419,26 @@ header {
 
 .news,
 .gallery {
-    /*у всех h2 откуда то взялся margin-top:25px*/
+    margin-bottom: 50px;
+    margin-top: 45px;
+    /*у всех h2 по стандарту margin-top:25px*/
 }
 
 .news {
-    /*padding: 20px 40px 50px 80px;*/
-    background-color: blue;
+    /*background-color: blue;*/
     width: 350px;
-    margin-right: 40px;
+    margin-right: 130px;
 }
 
 .news h2 {
-    margin-bottom: -10px;
-    /*отрицательный отступ лучше, чем костыль*/
+    margin-top: 0px;
+    margin-left: 1px;
+    margin-bottom: -5px;
+}
+
+.news p {
+    margin-bottom: 5px;
+    margin-top: 25px;
 }
 
 .news-link {
@@ -442,44 +450,36 @@ header {
     text-decoration: underline;
 }
 
-.news p {
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-top: 30px;
-}
-
-.news span {
+.date {
     font-size: 14px;
     text-transform: lowercase;
     font-weight: 700;
-}
-
-.date {
-    margin-right: 300px;
+    margin-right: 250px;
     /*костыль костыль костыль как кнопку вниз спихнуть?*/
 }
 
 .news .btn {
     width: 140px;
-    margin-top: 33px;
+    margin-top: 31px;
 }
 
 .gallery {
-    background-color: yellow;
+    /*background-color: yellow;*/
     width: 300px;
     font-size: 0;
-    /*padding: 20px 20px 50px 95px;*/
 }
 
 .gallery h2 {
+    margin-top: 0;
+    margin-left: 4px;
     margin-bottom: 0;
 }
 
 .gallery img {
-    margin-top: 20px;
+    margin-top: 22px;
     border: 7px solid rgb(255, 255, 255);
     width: 300px;
-    margin-bottom: 48px;
+    margin-bottom: 38px;
 }
 
 .gallery .btn {
@@ -497,40 +497,59 @@ header {
 
 /*↑↑  кнопки все еще блочно-строчные, не хочу переделывать  ↑↑*/
 
-.contacts-and-form {
-    margin-top: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
-    color: rgb(0, 0, 0);
-    background: url("images/sprite.png") no-repeat -880px -135px, url("images/bg.png");
+.contacts,
+.reserve-form {
+    margin-bottom: 50px;
+    margin-top: 45px;
 }
 
 .contacts {
     /*background-color: blue;*/
-    width: 470px;
-    padding: 20px 50px 50px 80px;
+    width: 350px;
+    margin-right: 130px;
+}
+
+.contacts h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contacts p {
+    margin-bottom: 5px;
+    margin-top: 19px;
 }
 
 .contacts .btn {
+    margin-top: 18px;
     margin-right: 20px;
     width: 140px;
 }
 
 .reserve-form {
-    width: 470px;
-    padding: 20px 70px 50px 80px;
+    width: 300px;
     /*background-color: yellow;*/
+}
+
+.reserve-form h2 {
+    margin-top: 0;
+    margin-left: 3px;
+    margin-bottom: 18px;
+}
+
+.reserve-form p {
+    margin-left: 3px;
+    margin-bottom: 15px;
 }
 
 .reserve-form form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-content: space-between;
 }
 
 .form-group {
     margin-bottom: 15px;
-    margin-right: 20px;
 }
 
 .form-group label {
@@ -554,11 +573,11 @@ header {
 
 footer {
     background-image: url("images/bg-footer.png");
-    margin-top: 40px;
+    margin-top: 65px;
 }
 
 .bot-menu {
-    padding-top: 30px;
+    padding-top: 45px;
     display: flex;
     justify-content: space-between;
     /*background-color: orange;*/
@@ -622,6 +641,8 @@ footer {
 }
 
 .made-by .btn {
+    padding-top: 9px;
+    padding-bottom: 9px;
     width: 140px;
 }
 
