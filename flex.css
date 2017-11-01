@@ -764,8 +764,6 @@ input[class="login-password"]::-webkit-input-placeholder {
     justify-content: flex-start;
 }
 
-.shop-page .top-links {}
-
 .shop-page .login-block {
     margin-left: auto;
     padding-right: 25px;
@@ -840,7 +838,12 @@ input[class="login-password"]::-webkit-input-placeholder {
     margin-bottom: 25px;
 }
 
-.shop-filters .filters-label {
+.shop-filters input {
+    display: block;
+}
+
+.shop-filters label {
+    display: block;
     margin-left: 28px;
     margin-right: 20px;
 }
