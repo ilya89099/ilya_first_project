@@ -688,7 +688,6 @@ footer {
     border: 2px solid rgb(0, 0, 0);
     margin-bottom: 10px;
     color: rgb(0, 0, 0);
-    text-transform: uppercase;
     font-weight: 700;
 }
 
@@ -697,18 +696,22 @@ footer {
 
 input[class="login-name"]::-moz-placeholder {
     color: rgb(0, 0, 0);
+    text-transform: uppercase;
 }
 
 input[class="login-password"]::-moz-placeholder {
     color: rgb(0, 0, 0);
+    text-transform: uppercase;
 }
 
 input[class="login-name"]::-webkit-input-placeholder {
     color: rgb(0, 0, 0);
+    text-transform: uppercase;
 }
 
 input[class="login-password"]::-webkit-input-placeholder {
     color: rgb(0, 0, 0);
+    text-transform: uppercase;
 }
 
 
