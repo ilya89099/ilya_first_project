@@ -310,6 +310,12 @@ input {
     font-weight: 700;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    position: relative;
+    top: 1px;
+}
+
 .btn {
     text-decoration: none;
     font-family: "PT Sans Narrow", sans-serif;
@@ -719,8 +725,6 @@ input[class="login-password"]::-webkit-input-placeholder {
 .login-form .remember {
     margin: 0;
     margin-right: 6px;
-    position: relative;
-    top: 1px;
     /*↑  +-  ↑*/
 }
 
@@ -763,8 +767,6 @@ input[class="login-password"]::-webkit-input-placeholder {
 .shop-page .top-menu {
     justify-content: flex-start;
 }
-
-.shop-page .top-links {}
 
 .shop-page .login-block {
     margin-left: auto;
