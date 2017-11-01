@@ -279,6 +279,7 @@ body {
 .container-960 {
     width: 960px;
     margin: auto;
+    /*background-color: green;*/
 }
 
 
@@ -410,18 +411,13 @@ header {
     margin-right: 10px;
     margin-left: 10px;
     color: rgb(0, 0, 0);
+    padding-top: 45px;
+    padding-bottom: 50px;
     background: url("images/sprite.png") no-repeat -880px -135px, url("images/bg.png");
     /*background-color: green;*/
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
-
-.news,
-.gallery {
-    margin-bottom: 50px;
-    margin-top: 45px;
-    /*у всех h2 по стандарту margin-top:25px*/
 }
 
 .news {
@@ -496,12 +492,6 @@ header {
 
 
 /*↑↑  кнопки все еще блочно-строчные, не хочу переделывать  ↑↑*/
-
-.contacts,
-.reserve-form {
-    margin-bottom: 50px;
-    margin-top: 45px;
-}
 
 .contacts {
     /*background-color: blue;*/
@@ -739,7 +729,7 @@ input[class="login-password"]::-webkit-input-placeholder {
 }
 
 .login-form a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
 }
 
@@ -770,8 +760,24 @@ input[class="login-password"]::-webkit-input-placeholder {
     border-bottom: 4px solid rgb(255, 255, 255);
 }
 
-.shop-logo {
+.shop-page .top-menu {
+    justify-content: flex-start;
+}
+
+.shop-page .top-links {}
+
+.shop-page .login-block {
+    margin-left: auto;
+    padding-right: 25px;
+}
+
+.shop-page .shop-logo {
+    margin-right: 0;
+    /*↑↑  переопределяю margin-right:40px от селектора .top-menu a  ↑↑*/
+    margin-left: 20px;
     height: 76px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .shop-main {
@@ -780,6 +786,8 @@ input[class="login-password"]::-webkit-input-placeholder {
 
 .shop-main h2 {
     margin-left: 10px;
+    margin-top: 48px;
+    margin-bottom: 20px;
 }
 
 .shop-breadcrumbs {
@@ -790,16 +798,16 @@ input[class="login-password"]::-webkit-input-placeholder {
 .shop-breadcrumbs .diamond {
     display: inline-block;
     background-color: rgb(0, 0, 0);
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     margin: 0;
-    margin-right: 7px;
+    margin-right: 15px;
+    margin-left: 15px;
     position: relative;
-    top: 2px;
+    left: 3px;
 }
 
 .shop-breadcrumbs a {
-    margin-right: 20px;
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
@@ -811,26 +819,34 @@ input[class="login-password"]::-webkit-input-placeholder {
 .filters-and-catalog {
     display: flex;
     justify-content: space-between;
+    margin-top: 55px;
 }
 
 .shop-filters {
-    padding-left: 10px;
-    width: 230px;
+    margin-left: 10px;
+    width: 220px;
 }
 
 .shop-filters h3 {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 30px;
 }
 
-.shop-filters .shop-input-group {
-    margin-bottom: 20px;
+.shop-filters .filters-input-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.shop-filters .filters-label {
+    margin-left: 28px;
+    margin-right: 20px;
 }
 
 .product-groups {
-    margin-top: 30px;
+    margin-top: 38px;
 }
 
 .shop-catalog {
@@ -850,14 +866,14 @@ input[class="login-password"]::-webkit-input-placeholder {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .catalog-item {
     background-color: rgb(255, 255, 255);
     width: 220px;
     margin-bottom: 20px;
-    box-shadow: 0 0 7px rgba(148, 148, 148, 0.3);
+    box-shadow: 0 0 10px rgba(58, 58, 58, 0.3);
 }
 
 .catalog-item p {
@@ -874,11 +890,12 @@ input[class="login-password"]::-webkit-input-placeholder {
 }
 
 .item-price {
+    border-radius: 0;
     font-size: 14px;
     display: inline-block;
     width: 110px;
     background-color: rgb(229, 229, 229);
-    padding: 13px;
+    padding: 14px 13px 14px 15px;
     text-align: center;
     margin-top: 5px;
 }
@@ -893,10 +910,11 @@ input[class="login-password"]::-webkit-input-placeholder {
 
 .pagination {
     margin-top: 25px;
+    font-size: 0;
 }
 
 .pagination .btn {
-    width: 45px;
+    width: 43px;
     margin-right: 7px;
 }
 
