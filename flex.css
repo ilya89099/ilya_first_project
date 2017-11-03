@@ -944,26 +944,26 @@ input[class="login-password"]::-webkit-input-placeholder {
 
 /*↑  Магазин Магазин  ↑*/
 
-.barbershop-item {
+.shop-item {
     background-image: url("images/bg.png");
 }
 
-.barbershop-item .top-links a:nth-child(4) {
+.shop-item .top-links a:nth-child(4) {
     padding-bottom: 22px;
     /*↑  на 4 меньше обычного потому что ↓рамка↓  ↑*/
     border-bottom: 4px solid rgb(255, 255, 255);
 }
 
-.barbershop-item .top-menu {
+.shop-item .top-menu {
     justify-content: flex-start;
 }
 
-.barbershop-item .login-block {
+.shop-item .login-block {
     margin-left: auto;
     padding-right: 25px;
 }
 
-.barbershop-item .shop-logo {
+.shop-item .shop-logo {
     margin-right: 0;
     /*↑↑  переопределяю margin-right:40px от селектора .top-menu a  ↑↑*/
     margin-left: 20px;
@@ -972,11 +972,11 @@ input[class="login-password"]::-webkit-input-placeholder {
     padding-left: 10px;
 }
 
-.barbershop-item-main {
+.shop-item-main {
     color: rgb(0, 0, 0);
 }
 
-.barbershop-item-main h2 {
+.shop-item-main h2 {
     margin-left: 10px;
     margin-top: 48px;
     margin-bottom: 20px;
@@ -996,7 +996,7 @@ input[class="login-password"]::-webkit-input-placeholder {
 
 .pics img {
     margin: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 0 10px rgba(148, 148, 148, 0.432)
 }
 
 .all-pics {
