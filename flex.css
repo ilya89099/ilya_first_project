@@ -244,9 +244,15 @@ template {
 /*↑  Normalize css  ↑*/
 
 .diamond {
-    width: 30px;
-    height: 30px;
-    background: rgb(255, 255, 255);
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    width: 7px;
+    height: 7px;
+    margin: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+    position: relative;
+    left: 3px;
     /* Rotate */
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -291,8 +297,8 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 p {
@@ -835,8 +841,6 @@ input[class="login-password"]::-webkit-input-placeholder {
 .shop-filters h3 {
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 24px;
 }
 
 .shop-filters .filters-input-group {
@@ -939,3 +943,107 @@ input[class="login-password"]::-webkit-input-placeholder {
 
 
 /*↑  Магазин Магазин  ↑*/
+
+.barbershop-item {
+    background-image: url("images/bg.png");
+}
+
+.barbershop-item .top-links a:nth-child(4) {
+    padding-bottom: 22px;
+    /*↑  на 4 меньше обычного потому что ↓рамка↓  ↑*/
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.barbershop-item .top-menu {
+    justify-content: flex-start;
+}
+
+.barbershop-item .login-block {
+    margin-left: auto;
+    padding-right: 25px;
+}
+
+.barbershop-item .shop-logo {
+    margin-right: 0;
+    /*↑↑  переопределяю margin-right:40px от селектора .top-menu a  ↑↑*/
+    margin-left: 20px;
+    height: 76px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.barbershop-item-main {
+    color: rgb(0, 0, 0);
+}
+
+.barbershop-item-main h2 {
+    margin-left: 10px;
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+
+.pics-and-description {
+    margin-top: 55px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pics {
+    width: 460px;
+}
+
+.pics img {
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.all-pics {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-block {
+    width: 400px;
+    padding: 8px;
+}
+
+.amount-and-number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.number {
+    color: rgb(171, 169, 167);
+}
+
+.description-block .btn {
+    width: 78px;
+}
+
+.description-block h3 {
+    margin-top: 62px;
+    margin-bottom: 27px;
+}
+
+.item-contains {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item-contains .diamond {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.it-contain p {
+    display: inline-block;
+    margin: 0;
+}
