@@ -869,7 +869,6 @@ input[class="login-password"]::-webkit-input-placeholder {
 
 .catalog-block {
     margin-right: 10px;
-    font-size: 0;
     list-style: none;
     margin-left: 0;
     padding: 0;
@@ -896,6 +895,10 @@ input[class="login-password"]::-webkit-input-placeholder {
 .item-name {
     text-transform: none;
     margin-top: 5px;
+}
+
+.price-buy {
+    font-size: 0;
 }
 
 .item-price {
