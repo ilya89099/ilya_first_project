@@ -762,6 +762,8 @@ input[class="login-password"]::-webkit-input-placeholder {
 
 .login-form label {
     margin-right: auto;
+    position: relative;
+    padding-left: 30px;
 }
 
 .login-form a {
@@ -772,6 +774,10 @@ input[class="login-password"]::-webkit-input-placeholder {
 .login-form .btn {
     width: 300px;
     margin-top: 15px;
+}
+
+.login-form input[type="checkbox"] {
+    display: none;
 }
 
 
@@ -871,7 +877,7 @@ input[class="login-password"]::-webkit-input-placeholder {
     border: 2px solid rgb(0, 0, 0);
 }
 
-input.filters-checkbox:checked+label::after {
+input.hidden-checkbox:checked+label::after {
     background: url("images/sprite.png") -864px -716px;
 }
 
@@ -888,7 +894,7 @@ input.filters-checkbox:checked+label::after {
     border-radius: 20px;
 }
 
-input.filters-radiobutton:checked+label::after {
+input.hidden-radiobutton:checked+label::after {
     background: url("images/sprite.png") -963px -715px;
 }
 
