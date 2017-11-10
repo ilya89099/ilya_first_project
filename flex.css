@@ -389,6 +389,11 @@ header {
     padding-left: 1.354166%;
 }
 
+.logo-centerer svg {
+    width: 371px;
+    height: 155px;
+}
+
 .features {
     margin: 35px 10px 0px 10px;
     display: flex;
@@ -410,7 +415,7 @@ header {
     margin-left: -15px;
     width: 30px;
     height: 30px;
-    background: url("images/white-rhombus.png") no-repeat;
+    background: url("images/sprite.png") no-repeat -559px -758px;
 }
 
 .features-item p {
@@ -836,7 +841,7 @@ input[class="login-password"]::-webkit-input-placeholder {
     height: 12px;
     top: 3px;
     right: 5px;
-    background: url("images/rhombus.png")
+    background: url("images/sprite.png") -68px -170px;
 }
 
 .shop-breadcrumbs a:last-child {
@@ -867,7 +872,7 @@ input[class="login-password"]::-webkit-input-placeholder {
 }
 
 input.filters-checkbox:checked+label::after {
-    background: url("images/crossinput.png") no-repeat 4px 4px;
+    background: url("images/sprite.png") -864px -716px;
 }
 
 .custom-radiobutton::after {
@@ -884,7 +889,7 @@ input.filters-checkbox:checked+label::after {
 }
 
 input.filters-radiobutton:checked+label::after {
-    background: url("images/circleinput.png") no-repeat 6px 6px;
+    background: url("images/sprite.png") -963px -715px;
 }
 
 .shop-filters h3 {
