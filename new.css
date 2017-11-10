@@ -1,0 +1,22 @@
+input {
+    display: none;
+}
+
+label {
+    position: relative;
+    padding-left: 20px;
+}
+
+label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+}
+
+input:checked+label:after {
+    background: red;
+}

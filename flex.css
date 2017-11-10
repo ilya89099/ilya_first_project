@@ -399,12 +399,29 @@ header {
 .features-item {
     width: 300px;
     text-align: center;
-    background: url("images/sprite.png") -424px -679px;
+    /*background: url("images/sprite.png") -424px -679px;*/
+}
+
+.white-romb::after {
+    content: "";
+    position: absolute;
+    top: 53px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    background: url("images/white-rhombus.png") no-repeat;
 }
 
 .features-item p {
-    margin-top: 60px;
+    margin-top: 0px;
     padding: 0px 10px;
+}
+
+.features-item h2 {
+    padding-bottom: 60px;
+    position: relative;
+    /*background-color: green;*/
 }
 
 .features-item:nth-child(2) p {
@@ -662,11 +679,11 @@ footer {
 /*↑  Barbershop Barbershop  ↑*/
 
 .login-page {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .login-window {
-    color: black;
+    color: rgb(0, 0, 0);
     width: 460px;
     margin: auto;
     margin-top: 40px;
@@ -805,21 +822,21 @@ input[class="login-password"]::-webkit-input-placeholder {
     margin-bottom: 25px;
 }
 
-.shop-breadcrumbs .diamond {
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
-    width: 7px;
-    height: 7px;
-    margin: 0;
-    margin-right: 15px;
-    margin-left: 15px;
-    position: relative;
-    left: 3px;
-}
-
 .shop-breadcrumbs a {
     color: rgb(0, 0, 0);
+    position: relative;
     text-decoration: none;
+    padding-right: 25px;
+}
+
+.black-romb::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    right: 5px;
+    background: url("images/rhombus.png")
 }
 
 .shop-breadcrumbs a:last-child {
@@ -837,20 +854,65 @@ input[class="login-password"]::-webkit-input-placeholder {
     width: 220px;
 }
 
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    margin-top: -12px;
+    top: 50%;
+    background-color: rgb(249, 246, 243);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+input.filters-checkbox:checked+label::after {
+    background: url("images/crossinput.png") no-repeat 4px 4px;
+}
+
+.custom-radiobutton::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: -12px;
+    top: 50%;
+    background-color: rgb(249, 246, 243);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+input.filters-radiobutton:checked+label::after {
+    background: url("images/circleinput.png") no-repeat 6px 6px;
+}
+
 .shop-filters h3 {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
+.shop-filters input {
+    display: none;
+}
+
 .shop-filters .filters-input-group {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
-.shop-filters .filters-label {
+.shop-filters label {
     margin-left: 28px;
     margin-right: 20px;
+    margin-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+
+.shop-filters label {
+    position: relative;
 }
 
 .product-groups {
@@ -1017,7 +1079,7 @@ input[class="login-password"]::-webkit-input-placeholder {
     padding: 8px;
 }
 
-.amount-and-number {
+.amount-and-index {
     display: flex;
     justify-content: space-between;
 }
@@ -1026,8 +1088,14 @@ input[class="login-password"]::-webkit-input-placeholder {
     margin-bottom: 30px;
 }
 
-.number {
+.amount,
+.index {
+    display: inline-block;
+}
+
+.index {
     color: rgb(171, 169, 167);
+    margin-right: 1px;
 }
 
 .description-block .btn {
@@ -1049,10 +1117,12 @@ input[class="login-password"]::-webkit-input-placeholder {
 }
 
 .item-contains li {
+    padding-left: 20px;
     margin-bottom: 8px;
+    position: relative;
 }
 
-.item-contains .diamond {
-    margin-left: 6px;
-    margin-right: 6px;
+.item-contains .black-romb::after {
+    left: 0;
+    top: 2px;
 }
