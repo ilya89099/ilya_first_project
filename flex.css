@@ -243,31 +243,6 @@ template {
 
 /*↑  Normalize css  ↑*/
 
-.diamond {
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
-    width: 7px;
-    height: 7px;
-    margin: 0;
-    margin-right: 15px;
-    margin-left: 15px;
-    position: relative;
-    left: 3px;
-    /* Rotate */
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    /* Rotate Origin */
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    margin-left: 130px;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -381,6 +356,10 @@ header {
     width: 60px;
     display: inline-block;
     background: url("images/sprite.png") no-repeat -70px -635px;
+}
+
+.barber-main .container {
+    position: relative;
 }
 
 .logo-centerer {
@@ -657,7 +636,6 @@ footer {
 .made-by {
     width: 350px;
     font-size: 0;
-    /*background-color: red;*/
     text-align: right;
 }
 
@@ -778,6 +756,36 @@ input[class="login-password"]::-webkit-input-placeholder {
 
 .login-form input[type="checkbox"] {
     display: none;
+}
+
+.close-modal {
+    top: -10px;
+    left: 130%;
+    position: relative;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background: url("images/sprite.png") -63px -264px;
+}
+
+.modal {
+    position: absolute;
+    margin-top: 0;
+    left: 50%;
+    margin-left: -230px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s linear;
+}
+
+.modal h2 {
+    margin-top: 4px;
+}
+
+.opened {
+    opacity: 1;
+    visibility: visible;
 }
 
 
