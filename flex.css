@@ -765,6 +765,10 @@ input[class="login-password"]::-webkit-input-placeholder {
     background: url("images/sprite.png") -63px -264px;
 }
 
+.close-modal:focus {
+    outline: 1px solid rgb(208, 208, 208);
+}
+
 .modal {
     position: absolute;
     margin-top: 0;
