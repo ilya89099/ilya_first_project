@@ -260,6 +260,7 @@ body {
 .container {
     width: 960px;
     margin: auto;
+    position: relative;
     /*background-color: green;*/
 }
 
@@ -356,10 +357,6 @@ header {
     width: 60px;
     display: inline-block;
     background: url("images/sprite.png") no-repeat -70px -635px;
-}
-
-.barber-main .container {
-    position: relative;
 }
 
 .logo-centerer {
@@ -830,7 +827,7 @@ input[class="login-password"]::-webkit-input-placeholder {
     color: rgb(0, 0, 0);
 }
 
-.shop-main h2 {
+.shop-main .shop-title {
     margin-left: 10px;
     margin-top: 48px;
     margin-bottom: 20px;
@@ -1064,7 +1061,7 @@ input.hidden-radiobutton:checked+label::after {
     color: rgb(0, 0, 0);
 }
 
-.shop-item-main h2 {
+.shop-item-main .shop-title {
     margin-left: 10px;
     margin-top: 48px;
     margin-bottom: 20px;

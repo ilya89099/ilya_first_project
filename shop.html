@@ -35,7 +35,20 @@
 
     <main>
         <div class="shop-main  container">
-            <h2>Средства для ухода</h2>
+            <div class="login-window  modal">
+                <button class="close-modal"></button>
+                <h2>Личный кабинет</h2>
+                <p>Введите пожалуйста свой логин и пароль</p>
+                <form class="login-form" action="" method="">
+                    <input class="login-name" type="text" placeholder="Логин" name="login">
+                    <input class="login-password" type="password" placeholder="Пароль" name="password">
+                    <input class="hidden-checkbox" type="checkbox" class="remember" name="remember-me" id="ch1">
+                    <label class="custom-checkbox" for="ch1">Запомните меня</label>
+                    <a class="forgot-password" href="">Я забыл пароль!</a>
+                    <button type="submit" class="sign-in  btn">Войти</button>
+                </form>
+            </div>
+            <h2 class="shop-title">Средства для ухода</h2>
             <nav class="shop-breadcrumbs">
                 <a class="black-romb" href="#">Главная</a>
                 <a class="black-romb" href="#">Магазин</a>
@@ -192,6 +205,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
