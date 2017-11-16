@@ -756,9 +756,9 @@ input[class="login-password"]::-webkit-input-placeholder {
 }
 
 .close-modal {
-    top: -10px;
-    left: 130%;
-    position: relative;
+    top: 6px;
+    right: -26px;
+    position: absolute;
     width: 21px;
     height: 21px;
     border: none;
@@ -778,10 +778,6 @@ input[class="login-password"]::-webkit-input-placeholder {
     opacity: 0;
     visibility: hidden;
     transition: opacity .3s linear;
-}
-
-.modal h2 {
-    margin-top: 4px;
 }
 
 .opened {
