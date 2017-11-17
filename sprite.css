@@ -1,4 +1,4 @@
-.vk, .instagram, .facebook, .stick, .rhombus, .login, .lock, .cross, .white-rhombus, .user, .crossinput, .circleinput{
+.vk, .instagram, .facebook, .stick, .rhombus, .login, .lock, .cross, .white-rhombus, .user, .crossinput, .circleinput, .red_cross{
 	background: url(sprites.png) no-repeat;
 }
 
@@ -72,5 +72,11 @@
 	background-position: -969px -721px ;
 	width: 8px;
 	height: 8px;
+}
+
+.red_cross{
+	background-position: -1118px -719px ;
+	width: 13px;
+	height: 13px;
 }
 
