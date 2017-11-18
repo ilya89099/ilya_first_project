@@ -700,27 +700,24 @@ footer {
 .login-password {
     width: 300px;
     padding: 10px;
-    padding-left: 15px;
     border: 2px solid rgb(0, 0, 0);
     margin-bottom: 10px;
     color: rgb(0, 0, 0);
     font-weight: 700;
 }
 
+.correct {
+    padding-left: 15px;
+}
+
+.incorrect {
+    padding-left: 19px;
+}
+
 
 /*↓↓ стилизация placeholder ↓↓*/
 
 .correct::-moz-placeholder {
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-}
-
-.correct::-moz-placeholder {
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-}
-
-.correct::-webkit-input-placeholder {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
@@ -742,21 +739,21 @@ footer {
 }
 
 .login-name.incorrect {
-    background: url("images/sprite.png") no-repeat -1117px -708px, url("images/sprite.png") no-repeat 99px -758px;
+    background: url("images/sprite.png") no-repeat -1115px -708px, url("images/sprite.png") no-repeat 99px -758px;
 }
 
 .login-password.incorrect {
-    background: url("images/sprite.png") no-repeat -1117px -708px, url("images/sprite.png") no-repeat 200px -55px;
+    background: url("images/sprite.png") no-repeat -1115px -708px, url("images/sprite.png") no-repeat 200px -55px;
 }
 
 .incorrect::-moz-placeholder {
-    color: rgb(255, 0, 0) !important;
-    text-transform: uppercase !important;
+    color: rgb(255, 73, 73);
+    text-transform: uppercase;
 }
 
 .incorrect::-webkit-input-placeholder {
-    color: rgb(255, 0, 0) !important;
-    text-transform: uppercase !important;
+    color: rgb(255, 73, 73);
+    text-transform: uppercase;
 }
 
 .login-form .remember {
@@ -894,6 +891,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 55px;
+    margin-bottom: 65px;
 }
 
 .shop-filters {
@@ -1100,6 +1098,7 @@ input.hidden-radiobutton:checked+label::after {
 
 .pics-and-description {
     margin-top: 55px;
+    margin-bottom: 65px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
