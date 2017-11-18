@@ -9,11 +9,15 @@ var remember = form.querySelector('[type = "checkbox"]')
 var send = form.querySelector('.btn')
 
 function closeModalFunc() {
-    modal.classList.remove('opened');
+    modal.style.marginTop = '-800px';
+    setTimeout(function() {
+        modal.classList.remove('opened');
+    }, 200);
     tint.classList.remove('tint-active');
 }
 
 function openModalFunc() {
+    modal.style.marginTop = '-200px';
     modal.classList.add('opened');
     tint.classList.add('tint-active');
 }
@@ -120,3 +124,30 @@ login.addEventListener('input', function() {
 password.addEventListener('input', function() {
     passwordCorrect();
 })
+
+
+/*window.addEventListener('keydown', function(keyEvent) {
+    if (keyEvent.keyCode == 13) {
+        keyEvent.preventDefault();
+        if (login.focus) {
+            if (login.value) {
+                password.focus();
+            }
+            if (!login.value) {
+                loginIncorrect();
+            }
+        }
+        if (password.focus) {
+            if (password.value) {
+                send.focus();
+            }
+            if (!password.value) {
+                passwordIncorrect();
+            }
+        }
+        if (login.value && password.value) {
+            form.submit;
+        }
+    }
+})
+↑↑ не работает ↑↑*/
