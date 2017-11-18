@@ -8,9 +8,10 @@ var password = form.querySelector('[name="password"]')
 var remember = form.querySelector('[type = "checkbox"]')
 var send = form.querySelector('.btn')
 
-localStorage.setItem('loginFocus', 'false');
-localStorage.setItem('passwordFocus', 'false');
-localStorage.setItem('sendFocus', 'false');
+var loginFocus = false;
+var passwordFocus = false;
+var sendFocus = false;
+
 
 function closeModalFunc() {
     modal.style.marginTop = '-800px';
@@ -99,25 +100,25 @@ window.addEventListener('keydown', function(es) {
     }
     if (es.keyCode == '38') {
         es.preventDefault();
-        if (localStorage.getItem('passwordFocus') == 'true') {
+        if (passwordFocus == true) {
             login.focus();
         } else
-        if (localStorage.getItem('loginFocus') == 'true') {
+        if (loginFocus == true) {
             send.focus();
         } else
-        if (localStorage.getItem('sendFocus') == 'true') {
+        if (sendFocus == true) {
             password.focus();
         }
     }
     if (es.keyCode == '40') {
         es.preventDefault();
-        if (localStorage.getItem('loginFocus') == 'true') {
+        if (loginFocus == true) {
             password.focus();
         } else
-        if (localStorage.getItem('passwordFocus') == 'true') {
+        if (passwordFocus == true) {
             send.focus();
         } else
-        if (localStorage.getItem('sendFocus') == 'true') {
+        if (sendFocus == true) {
             login.focus();
         }
     }
@@ -130,22 +131,22 @@ window.addEventListener('keydown', function(es) {
 
 login.addEventListener('focus', function() {
     loginCorrect();
-    localStorage.setItem('loginFocus', 'true');
-    localStorage.setItem('passwordFocus', 'false');
-    localStorage.setItem('sendFocus', 'false');
+    loginFocus = true;
+    passwordFocus = false;
+    sendFocus = false;
 })
 
 password.addEventListener('focus', function() {
     passwordCorrect();
-    localStorage.setItem('loginFocus', 'false');
-    localStorage.setItem('passwordFocus', 'true');
-    localStorage.setItem('sendFocus', 'false');
+    loginFocus = false;
+    passwordFocus = true;
+    sendFocus = false;
 })
 
 send.addEventListener('focus', function() {
-    localStorage.setItem('loginFocus', 'false');
-    localStorage.setItem('passwordFocus', 'false');
-    localStorage.setItem('sendFocus', 'true');
+    loginFocus = false;
+    passwordFocus = false;
+    sendFocus = true;
 })
 
 login.addEventListener('input', function() {
@@ -160,7 +161,7 @@ password.addEventListener('input', function() {
 window.addEventListener('keydown', function(keyEvent) {
     if (keyEvent.keyCode == 13) {
         keyEvent.preventDefault();
-        if (localStorage.getItem('passwordFocus') == 'true') {
+        if (passwordFocus == true) {
             if (password.value) {
                 send.focus();
             }
@@ -168,7 +169,7 @@ window.addEventListener('keydown', function(keyEvent) {
                 passwordIncorrect();
             }
         }
-        if (localStorage.getItem('loginFocus') == 'true') {
+        if (loginFocus == true) {
             if (login.value) {
                 password.focus();
             }
@@ -176,7 +177,7 @@ window.addEventListener('keydown', function(keyEvent) {
                 loginIncorrect();
             }
         }
-        if (localStorage.getItem('sendFocus') == 'true') {
+        if (sendFocus == true) {
             if (login.value && password.value) {
                 form.submit();
             } else {
