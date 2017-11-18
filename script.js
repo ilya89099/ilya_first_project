@@ -14,11 +14,12 @@ var sendFocus = false;
 
 
 function closeModalFunc() {
-    modal.style.marginTop = '-800px';
+    modal.style.marginTop = '-1000px';
     setTimeout(function() {
         modal.classList.remove('opened');
-    }, 200);
+    }, 500);
     tint.classList.remove('tint-active');
+    loginLink.disabled;
 }
 
 function openModalFunc() {

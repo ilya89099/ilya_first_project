@@ -800,12 +800,12 @@ footer {
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -800px;
+    margin-top: -1000px;
     margin-left: -230px;
     z-index: 2;
     /*opacity: 0;*/
     visibility: hidden;
-    transition: margin-top .3s ease;
+    transition: margin-top .5s ease;
 }
 
 .opened {
