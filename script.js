@@ -19,7 +19,6 @@ function closeModalFunc() {
         modal.classList.remove('opened');
     }, 500);
     tint.classList.remove('tint-active');
-    loginLink.disabled;
 }
 
 function openModalFunc() {
