@@ -8,6 +8,10 @@ var password = form.querySelector('[name="password"]')
 var remember = form.querySelector('[type = "checkbox"]')
 var send = form.querySelector('.btn')
 
+localStorage.setItem('loginFocus', 'false');
+localStorage.setItem('passwordFocus', 'false');
+localStorage.setItem('sendFocus', 'false');
+
 function closeModalFunc() {
     modal.style.marginTop = '-800px';
     setTimeout(function() {
@@ -95,26 +99,53 @@ window.addEventListener('keydown', function(es) {
     }
     if (es.keyCode == '38') {
         es.preventDefault();
-        if (password.focus) {
+        if (localStorage.getItem('passwordFocus') == 'true') {
             login.focus();
+        } else
+        if (localStorage.getItem('loginFocus') == 'true') {
+            send.focus();
+        } else
+        if (localStorage.getItem('sendFocus') == 'true') {
+            password.focus();
         }
     }
     if (es.keyCode == '40') {
         es.preventDefault();
-        if (login.focus) {
+        if (localStorage.getItem('loginFocus') == 'true') {
             password.focus();
+        } else
+        if (localStorage.getItem('passwordFocus') == 'true') {
+            send.focus();
+        } else
+        if (localStorage.getItem('sendFocus') == 'true') {
+            login.focus();
         }
-
+    }
+    if (es.keyCode == '32') {
+        es.preventDefault();
+        send.focus();
     }
 })
 
 
 login.addEventListener('focus', function() {
     loginCorrect();
+    localStorage.setItem('loginFocus', 'true');
+    localStorage.setItem('passwordFocus', 'false');
+    localStorage.setItem('sendFocus', 'false');
 })
 
 password.addEventListener('focus', function() {
     passwordCorrect();
+    localStorage.setItem('loginFocus', 'false');
+    localStorage.setItem('passwordFocus', 'true');
+    localStorage.setItem('sendFocus', 'false');
+})
+
+send.addEventListener('focus', function() {
+    localStorage.setItem('loginFocus', 'false');
+    localStorage.setItem('passwordFocus', 'false');
+    localStorage.setItem('sendFocus', 'true');
 })
 
 login.addEventListener('input', function() {
@@ -126,18 +157,10 @@ password.addEventListener('input', function() {
 })
 
 
-/*window.addEventListener('keydown', function(keyEvent) {
+window.addEventListener('keydown', function(keyEvent) {
     if (keyEvent.keyCode == 13) {
         keyEvent.preventDefault();
-        if (login.focus) {
-            if (login.value) {
-                password.focus();
-            }
-            if (!login.value) {
-                loginIncorrect();
-            }
-        }
-        if (password.focus) {
+        if (localStorage.getItem('passwordFocus') == 'true') {
             if (password.value) {
                 send.focus();
             }
@@ -145,9 +168,22 @@ password.addEventListener('input', function() {
                 passwordIncorrect();
             }
         }
-        if (login.value && password.value) {
-            form.submit;
+        if (localStorage.getItem('loginFocus') == 'true') {
+            if (login.value) {
+                password.focus();
+            }
+            if (!login.value) {
+                loginIncorrect();
+            }
+        }
+        if (localStorage.getItem('sendFocus') == 'true') {
+            if (login.value && password.value) {
+                form.submit;
+            } else {
+                login.focus();
+                if (!login.value) { loginIncorrect(); }
+                if (!password.value) { passwordIncorrect(); }
+            }
         }
     }
 })
-↑↑ не работает ↑↑*/
