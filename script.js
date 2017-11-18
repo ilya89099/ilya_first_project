@@ -178,7 +178,7 @@ window.addEventListener('keydown', function(keyEvent) {
         }
         if (localStorage.getItem('sendFocus') == 'true') {
             if (login.value && password.value) {
-                form.submit;
+                form.submit();
             } else {
                 login.focus();
                 if (!login.value) { loginIncorrect(); }
