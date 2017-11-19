@@ -132,23 +132,26 @@ window.addEventListener('keydown', function(es) {
 login.addEventListener('focus', function() {
     loginCorrect();
     loginFocus = true;
-    passwordFocus = false;
-    sendFocus = false;
 })
-
+login.addEventListener('blur', function() {
+    loginFocus = false;
+})
 password.addEventListener('focus', function() {
     passwordCorrect();
-    loginFocus = false;
     passwordFocus = true;
-    sendFocus = false;
+})
+
+password.addEventListener('blur', function() {
+    passwordFocus = false;
 })
 
 send.addEventListener('focus', function() {
-    loginFocus = false;
-    passwordFocus = false;
     sendFocus = true;
 })
 
+send.addEventListener('blur', function() {
+    sendFocus = false;
+})
 login.addEventListener('input', function() {
     loginCorrect();
 })
