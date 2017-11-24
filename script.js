@@ -1,7 +1,7 @@
 var modal = document.querySelector('.modal');
 var loginLink = document.querySelector('.login');
 var closeModal = document.querySelector('.close-modal')
-var tint = document.querySelector('.tint')
+var tint = document.querySelector('.barbershop-page')
 var form = modal.querySelector('form')
 var login = form.querySelector('[name="login"]')
 var password = form.querySelector('[name="password"]')
@@ -18,13 +18,13 @@ function closeModalFunc() {
     setTimeout(function() {
         modal.classList.remove('opened');
     }, 500);
-    tint.classList.remove('tint-active');
+    tint.classList.remove('shadow');
 }
 
 function openModalFunc() {
     modal.style.marginTop = '-200px';
     modal.classList.add('opened');
-    tint.classList.add('tint-active');
+    tint.classList.add('shadow');
 }
 
 loginLink.addEventListener('click', function(event) {
